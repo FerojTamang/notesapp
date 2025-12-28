@@ -65,9 +65,7 @@ router.put('/:id', async (req, res) => {
         if (req.body.title) note.title = req.body.title
         if (req.body.content) note.content = req.body.content
         if (req.body.color) note.color = req.body.color
-
-    
-
+        
         const updatedNote = await note.save()
         res.json(updatedNote)
         

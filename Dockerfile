@@ -17,7 +17,7 @@ COPY . .
 ENV NODE_ENV=production
 
 # Expose app port
-EXPOSE 3000
+EXPOSE 5000
 
 # Run as non-root user (security)
 USER node
